@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oblivion Dots</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e2e;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.5rem;
-            color: #aaa;
-        }
-        a {
-            color: #00bfff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oblivion Dots</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 <body>
-    <h1>Welcome to Oblivion Dots!</h1>
-    <p>This is my first GitHub Pages site.</p>
-    <p>Check out my <a href="https://github.com/Oblivion-dots">GitHub profile</a>.</p>
+
+<header class="fade-up">
+  <div class="logo">Oblivion Dots</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Docs</a>
+    <a href="#">GitHub</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="glow"></div>
+
+  <div class="hero-content fade-up">
+    <h1>Next-Gen Hyprland Shell</h1>
+    <p>Oblivion Dots is a Quickshell-powered, highly customizable desktop experience.</p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#">Get Started</a>
+      <a class="btn secondary" href="#">View on GitHub</a>
+    </div>
+
+    <div class="install-chip" onclick="copyInstall()">
+      <span class="install-label">Install</span>
+      <span class="prompt">$</span>
+      <span id="type"></span>
+      <span id="copyState"></span>
+    </div>
+  </div>
+</section>
+
+<section class="section fade-up">
+  <h2>Core Features</h2>
+  <div class="grid">
+    <div class="card"><h3>Fast</h3><p>Lightweight and responsive system design.</p></div>
+    <div class="card"><h3>Dynamic</h3><p>Adapts to your environment.</p></div>
+    <div class="card"><h3>Extensible</h3><p>Plugin system support.</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Oblivion Dots
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
